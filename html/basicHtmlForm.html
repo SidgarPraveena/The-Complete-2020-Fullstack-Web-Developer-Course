@@ -2,106 +2,152 @@
 <html>
 <head>
 <title>simple form</title>
+<link href="style.css" rel="stylesheet" type="text/css" >
 </head>
 
 <body>
-	<form method="post" action="https://github.com/SidgarPraveena?tab=repositories"> 
-				TEXT: <input type="text" id="text_id" /> <br/>
-		PASSWORD: <input type="password" id="password_id" /> 
-		<br/>
-		DROPDOWN: 
-		<select>
-			<option value="male"> MALE</option>
-			<option value="female">FEMALE</option>
-		</select> 
-		<br/>
-		DROPDOWN:
-		<select>
-			<option value="NA" disabled="disabled" selected="selected">SELECT GENDER</option>
-			<option value="male"> MALE</option>
-			<option value="female">FEMALE</option>
-		</select> 
-		<br/>
-		TEXTAREA: <br/>
-		<textarea rows="5" cols="60"> </textarea>
-		<br/>
-		RADIO BUTTONS <br/>
-		<input type="radio" name="radioButtons" id="rb1" value="rb_1"> button_1
-		<input type="radio" name="radioButtons" id="rb2" value="rb_2"> button_2
-		<input type="radio" name="radioButtons" id="rb3" value="rb_3"> button_3
-		<br/>
-		CHECK BOX: <br/>
-		<input type="checkbox" name="checkbox" id="cb1" > checkbox_1
-		<input type="checkbox" name="checkbox" id="cb2" > checkbox_2
-		<input type="checkbox" name="checkbox" id="cb3" > checkbox_3
-		<br/>
-		HYPERLINK:
-		<a href="https://github.com/SidgarPraveena?tab=repositories">My github repo</a>
-		<br/>
-		ORDERED LIST: Numbering
-		<ol>
-			<li>item 1</li>
-			<li>item 2</li>
-		</ol>
-		ORDERED LIST: alphabets
-		<ol type="a">
-			<li>item 1</li>
-			<li>item 2</li>
-		</ol>
-		ORDERED LIST: upper-alpha
-		<ol type="A">
-			<li>item 1</li>
-			<li>item 2</li>
-		</ol>
-		ORDERED LIST: numericals
-		<ol type="i">
-			<li>item 1</li>
-			<li>item 2</li>
-		</ol>
-		ORDERED LIST: numericals
-		<ol type="I">
-			<li>item 1</li>
-			<li>item 2</li>
-		</ol>
-		UNORDERED LIST: Numbering
-		<ul type="circle">
-			<li>item 1</li>
-			<li>item 2</li>
-		</ul>
-		UNORDERED LIST: Numbering
-		<ul type="disc">
-			<li>item 1</li>
-			<li>item 2</li>
-		</ul>
-		UNORDERED LIST: Numbering
-		<ul type="square">
-			<li>item 1</li>
-			<li>item 2</li>
-		</ul>
-		<div style="text-align:center;">
-			<video  width="250" autoplay="autoplay" controls="controls" >
-			<source src="tom_jerry.mp4" type="video/mp4">
-			<source src="tom_jerry.ogg" type="video/ogg">
-			<source src="tom_jerry.webm" type="video/webm">
-			Your browser does not support the video
-			</video>
-		</div>
-		<br/>
-		<div style="text-align:center;" >
-			<audio autoplay="autoplay" controls="controls" >
-			<source src="music.mp3" type="audio/mp3">
-			<source src="music.ogg" type="audio/ogg">
-			<source src="music.wav" type="audio/wav">
-			Your browser does not support the video
-			</audio>
-		</div>
-		BUTTON: <button type="button" > Button </button>
-		BUTTON: <input type="button" value="Button" > <br/>
-		RESET BUTTON: <button type="reset"> Reset Button</button> 
-		RESET BUTTON: <input type="reset" value="Reset Button"> <br/>
-		SUBMIT BUTTON: <button type="submit"> Submit Button</button> 
-		SUBMIT BUTTON: <input type="submit" value="Submit Button"> <br/>
-	</form>
+	<div id="form_id">
+		<form method="post" action="https://github.com/SidgarPraveena?tab=repositories"> 
+			<div id="input_types">
+				<h1 class="head1">SOME INPUT TYPES</h1>
+				<span id="input_span_id">
+					TEXT: <input type="text" style="text-overflow:ellipsis"/> <br/>
+					TEXT: <input type="text" /> <br/>
+					PASSWORD: <input type="password" id="password_id" /> 
+					<br/>
+					DROPDOWN: 
+					<select>
+						<option value="male"> MALE</option>
+						<option value="female">FEMALE</option>
+					</select> 
+					<br/>
+					DROPDOWN:
+					<select>
+						<option value="NA" disabled="disabled" selected="selected">SELECT GENDER</option>
+						<option value="male"> MALE</option>
+						<option value="female">FEMALE</option>
+					</select> 
+					<br/>
+					TEXTAREA: <br/>
+					<textarea rows="5" cols="60"> </textarea>
+					<br/>
+					RADIO BUTTONS <br/>
+					<input type="radio" name="radioButtons" id="rb1" value="rb_1"> button_1
+					<input type="radio" name="radioButtons" id="rb2" value="rb_2"> button_2
+					<input type="radio" name="radioButtons" id="rb3" value="rb_3"> button_3
+					<br/>
+					CHECK BOX: <br/>
+					<input type="checkbox" name="checkbox" id="cb1" > checkbox_1
+					<input type="checkbox" name="checkbox" id="cb2" > checkbox_2
+					<input type="checkbox" name="checkbox" id="cb3" > checkbox_3
+					<br/>
+				</span>
+			</div>
+			<hr style="background-color:black; height: 2px;"/>
+			<div id="hyperlink_types">
+				<h1 class="head1">HYPERLINK</h1>
+				<span id="hyperlink_span_id"> <a href="https://github.com/SidgarPraveena?tab=repositories">My github repo</a> </span>
+			</div>
+			<hr style="background-color:black; height: 2px;"/>
+			<div id="list_types">
+				<h1 class="head1">LISTS</h1>
+				<span id="list_span_id">
+					ORDERED LIST: Numbering
+					<ol class="ord_list">
+						<li>item 1</li>
+						<li>item 2</li>
+					</ol>
+					ORDERED LIST: alphabets
+					<ol	class="ord_list" type="a">
+						<li>item 1</li>
+						<li>item 2</li>
+					</ol>
+					ORDERED LIST: upper-alpha
+					<ol class="ord_list" type="A">
+						<li>item 1</li>
+						<li>item 2</li>
+					</ol>
+					ORDERED LIST: numericals
+					<ol class="ord_list" type="i">
+						<li>item 1</li>
+						<li>item 2</li>
+					</ol>
+					ORDERED LIST: numericals
+					<ol class="ord_list" type="I">
+						<li>item 1</li>
+						<li>item 2</li>
+					</ol>
+					UNORDERED LIST:
+					<ul style="list-style-type:circle">
+						<li>item 1</li>
+						<li>item 2</li>
+					</ul>
+					UNORDERED LIST:
+					<ul style="list-style-type:disc">
+						<li>item 1</li>
+						<li>item 2</li>
+					</ul>
+					UNORDERED LIST:
+					<ul style="list-style-type:square">
+						<li>item 1</li>
+						<li>item 2</li>
+					</ul>
+					CUSTOM LIST IMAGE:
+					<ul class="cust_image">
+						<li>item 1</li>
+						<li>item 2</li>
+					</ul>
+				</span>
+			</div>
+			<hr style="background-color:black; height: 2px;"/>
+			<div id="video_types">
+				<h1 class="head1">AUDIO AND VIDEO</h1>
+				<span id="video_span_id">
+					<video  width="250" autoplay="autoplay" controls="controls" >
+					<source src="tom_jerry.mp4" type="video/mp4">
+					<source src="tom_jerry.ogg" type="video/ogg">
+					<source src="tom_jerry.webm" type="video/webm">
+					Your browser does not support the video
+					</video>
+					<br/>
+					<audio autoplay="autoplay" controls="controls" >
+					<source src="music.mp3" type="audio/mp3">
+					<source src="music.ogg" type="audio/ogg">
+					<source src="music.wav" type="audio/wav">
+					Your browser does not support the video
+					</audio>
+				</span>
+			</div>
+			<hr style="background-color:black; height: 2px;"/>
+			<div id="button_types">
+				<h1 class="head1">BUTTONS</h1>
+				<span id="button_span_id">
+					BUTTON: <button type="button" > Button </button>
+					BUTTON: <input type="button" value="Button" > <br/>
+					RESET BUTTON: <button type="reset"> Reset Button</button> 
+					RESET BUTTON: <input type="reset" value="Reset Button"> <br/>
+					SUBMIT BUTTON: <button type="submit"> Submit Button</button> 
+					SUBMIT BUTTON: <input type="submit" value="Submit Button"> <br/>
+				</span>
+			</div>
+			<hr style="background-color:black; height: 2px;"/>
+			<div id="position_types" >
+				<h1 class="head1">Z-Index</h1>
+				<span id="position_span_id">
+					<div style='position:relative; height:140px'>
+						<div style='background-color:red; width:150px;height:100px;
+							left:0;top:0;position:absolute;'>&nbsp</div>
+						<div style='background-color:blue; width:50px;height:75px;
+							left:125px;top:25px;position:absolute; z-index:1'>&nbsp</div>
+						<div style='background-color:black; width:75px;height:125px;
+							left:175px;top:5px;position:absolute; z-index:2'>&nbsp</div>
+						<div style='background-color:yellow; width:100px;height:55px;
+							left:45px;top:80px;position:absolute; z-index:3'>&nbsp</div>
+					</div>
+				</span>
+			</div>
+		</form>
+	</div>
 </body>
 
 </html>

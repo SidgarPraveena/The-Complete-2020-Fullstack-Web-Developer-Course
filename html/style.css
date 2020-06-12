@@ -1,0 +1,93 @@
+body{
+	border-style: solid;
+	border-width: 5px;
+	width: 50%;
+	margin: auto;
+}
+
+#form_id{
+	background-image: url('bg.gif');
+	background-repeat: repeat;
+}
+
+h1.head1{
+	color: red;
+}
+
+#input_span_id{
+	display: none;
+}
+#input_types:hover #input_span_id{
+	background-color: lightpink;
+	display: block;
+}
+
+#hyperlink_span_id{
+	display: none;
+}
+#hyperlink_types:hover #hyperlink_span_id{
+	display: block;
+	background-color: lightpink;
+}
+
+#list_span_id{
+	display: none;
+}
+#list_types:hover #list_span_id{
+	display: block;
+	background-color: lightpink;
+}
+
+#video_span_id{
+	display: none;
+}
+#video_types:hover #video_span_id{
+	display: block;
+	background-color: lightpink;
+}
+
+#button_span_id{
+	display: none;
+}
+#button_types:hover #button_span_id{
+	display: block;
+	background-color: lightpink;
+}
+
+#position_span_id{
+	display: none;
+}
+#position_types:hover #position_span_id{
+	display:block;
+	background-color: lightpink;
+}
+
+/* todisplay all the list elements in same line 
+li{
+	display: inline;
+} */
+
+.ord_list{
+  text-align: center;
+  list-style-position: inside;
+}
+
+
+ul {
+  text-align: center;
+  list-style: inside;
+}
+
+/* change in link color upon visited, hover, active */
+a:link {
+	color: blue;
+}
+a:visited {
+	color: red;
+}
+a:hover {
+	color: green;
+}
+a:active {
+	color: yellow;
+}
